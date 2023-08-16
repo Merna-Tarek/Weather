@@ -1,0 +1,110 @@
+
+body {
+    background-color: #1e202b;
+}
+
+.weather-info {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.current-weather,
+.forecast-weather-1,
+.forecast-weather-2 {
+    width: 100%;
+    background-color: #323544;
+}
+
+.current-weather-header,
+.forecast-weather-1-header,
+.forecast-weather-2-header {
+    background-color: #262936;
+    width: 100%;
+}
+
+#location {
+    font-size: 1.125rem;
+}
+
+#currentTemp {
+    font-size: 24px;
+    margin-right: 1.875rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#forcastedMaxTemp1,
+#forcastedMaxTemp2 {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+}
+
+p,
+span {
+    color: white;
+}
+
+#currentWeatherCondition,
+#forcastedWeatherCondText1,
+#forcastedWeatherCondText2 {
+    color: #009ad8;
+}
+
+.current-weather-content,
+.forecast-weather-1-content,
+.forecast-weather-2-content {
+    width: 100%;
+    min-height: 310px;
+}
+
+#currentIcon,
+#forcastedWeatherCond1,
+#forcastedWeatherCond2 {
+    margin-inline: auto;
+    width: 90px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background-color: #1e202b;
+    background-clip: padding-box;
+    border: none;
+    appearance: none;
+    border-radius: 50px 50px 50px 50px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #1e202b;
+    border-color: none;
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+::placeholder {
+    color: white !important;
+}
+
+#searchBtn {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+}
+
+.btn {
+    width: 120px;
+    border-radius: 75px;
+    color: white;
+    padding: 5px;
+}

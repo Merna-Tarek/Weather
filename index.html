@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css"> 
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Weather</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="row">
+      <div class="weather-info vh-100">
+        <div class="container w-75 py-5">
+          <div class="find-location position position-relative">
+            <input type="text" placeholder="Find your location..." id="locationSearch" class="form-control">
+            <button type="submit" name="search" id="searchBtn" class="btn btn-primary">Find</button>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="current-weather rounded-3">
+                <div class="current-weather-header d-flex justify-content-between align-items-center p-3 rounded-top-3">
+                  <p class="m-0" id="day"></p>
+                  <p class="m-0" id="date"></p>
+                </div>
+                <div class="current-weather-content px-3 py-4">
+                  <p id="location"></p>
+                  <div class="temp-condition d-flex justify-content-center align-items-center">
+                    <p id="currentTemp"></p>
+                    <img src="" alt="" id="currentIcon">
+                  </div>
+                  <p id="currentWeatherCondition"></p>
+                  <span class="me-2"><img src="./images/icon-umberella.png" alt="chance-of-rain" class="me-2"><span
+                      id="rainChance"></span></span>
+                  <span class="me-2"><img src="./images/icon-wind.png" alt="wind-speed" class="me-2"><span
+                      id="windSpeed"></span></span>
+                  <span><img src="./images/icon-compass.png" alt="wind-direction" class="me-2"><span
+                      id="windDir"></span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+              <div class="forecast-weather-1 rounded-3">
+                <div class="forecast-weather-1-header p-3 rounded-top-3">
+                  <p id="day1" class="text-center m-0"></p>
+                </div>
+                <div class="forecast-weather-1-content d-flex flex-column justify-content-center">
+                  <img src="" alt="" id="forcastedWeatherCond1">
+                  <p id="forcastedMaxTemp1"></p>
+                  <p id="forcastedMinTemp1"></p>
+                  <p id="forcastedWeatherCondText1"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+              <div class="forecast-weather-2 rounded-3">
+                <div class="forecast-weather-2-header p-3 rounded-top-3">
+                  <p id="day2" class="text-center m-0"></p>
+                </div>
+                <div class="forecast-weather-2-content d-flex flex-column justify-content-center">
+                  <img src="" alt="" id="forcastedWeatherCond2">
+                  <p id="forcastedMaxTemp2"></p>
+                  <p id="forcastedMinTemp2"></p>
+                  <p id="forcastedWeatherCondText2"></p>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  </body>
+</html>
